@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+	<annotation>
+		<size>
+			<width>1024</width>
+			<height>768</height>
+			<depth>3</depth>
+		</size>
+		<url>https://requestor-proxy.figure-eight.com/figure_eight_datasets/open-images/validation/7b4e86e1c94d65de.jpg</url>
+		<object>
+			<name>carplate</name>
+			<difficult>0</difficult>
+			<occluded>0</occluded>
+			<truncated>0</truncated>
+			<bndbox>
+				<xmin>945</xmin>
+				<ymin>413</ymin>
+				<xmax>969</xmax>
+				<ymax>440</ymax>
+			</bndbox>
+		</object>
+	</annotation>
