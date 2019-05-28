@@ -1,12 +1,20 @@
 <?xml version="1.0" encoding="utf-8"?>
 	<annotation>
+		<folder>Cars</folder>
+		<filename>00828.jpg</filename>
+		<source>
+			<database>Cars car carplate</database>
+		</source>
 		<size>
 			<width>720</width>
 			<height>392</height>
 			<depth>3</depth>
 		</size>
+		<segmented>0</segmented>
 		<object>
 			<name>car</name>
+			<pose>Unspecified</pose>
+			<truncated>0</truncated>
 			<difficult>0</difficult>
 			<bndbox>
 				<xmin>4</xmin>
@@ -17,12 +25,22 @@
 		</object>
 		<object>
 			<name>carplate</name>
+			<pose>Unspecified</pose>
+			<truncated>0</truncated>
 			<difficult>0</difficult>
 			<bndbox>
 				<xmin>445</xmin>
 				<ymin>213</ymin>
 				<xmax>526</xmax>
 				<ymax>236</ymax>
+				<x_top_left>445</x_top_left>
+				<y_top_left>215</y_top_left>
+				<x_top_right>524</x_top_right>
+				<y_top_right>213</y_top_right>
+				<x_bottom_right>526</x_bottom_right>
+				<y_bottom_right>235</y_bottom_right>
+				<x_bottom_left>446</x_bottom_left>
+				<y_bottom_left>236</y_bottom_left>
 			</bndbox>
 		</object>
 	</annotation>
