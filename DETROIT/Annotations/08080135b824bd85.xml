@@ -1,16 +1,23 @@
 <?xml version="1.0" encoding="utf-8"?>
 	<annotation>
+		<folder>OID</folder>
+		<filename>08080135b824bd85.jpg</filename>
+		<source>
+			<database>OID car carplate</database>
+			<url>https://requestor-proxy.figure-eight.com/figure_eight_datasets/open-images/test/08080135b824bd85.jpg</url>
+		</source>
 		<size>
 			<width>767</width>
 			<height>1024</height>
 			<depth>3</depth>
 		</size>
-		<url>https://requestor-proxy.figure-eight.com/figure_eight_datasets/open-images/test/08080135b824bd85.jpg</url>
+		<segmented>0</segmented>
 		<object>
 			<name>carplate</name>
-			<difficult>0</difficult>
+			<pose>Unspecified</pose>
 			<occluded>0</occluded>
 			<truncated>0</truncated>
+			<difficult>0</difficult>
 			<bndbox>
 				<xmin>279</xmin>
 				<ymin>777</ymin>
@@ -20,9 +27,10 @@
 		</object>
 		<object>
 			<name>carplate</name>
-			<difficult>0</difficult>
+			<pose>Unspecified</pose>
 			<occluded>0</occluded>
 			<truncated>0</truncated>
+			<difficult>0</difficult>
 			<bndbox>
 				<xmin>717</xmin>
 				<ymin>790</ymin>
@@ -32,9 +40,10 @@
 		</object>
 		<object>
 			<name>car</name>
-			<difficult>0</difficult>
+			<pose>Unspecified</pose>
 			<occluded>0</occluded>
 			<truncated>0</truncated>
+			<difficult>0</difficult>
 			<bndbox>
 				<xmin>117</xmin>
 				<ymin>738</ymin>
@@ -44,9 +53,10 @@
 		</object>
 		<object>
 			<name>car</name>
-			<difficult>0</difficult>
+			<pose>Unspecified</pose>
 			<occluded>0</occluded>
 			<truncated>1</truncated>
+			<difficult>0</difficult>
 			<bndbox>
 				<xmin>697</xmin>
 				<ymin>746</ymin>

@@ -1,16 +1,23 @@
 <?xml version="1.0" encoding="utf-8"?>
 	<annotation>
+		<folder>OID</folder>
+		<filename>5df8350a0ed5ac7d.jpg</filename>
+		<source>
+			<database>OID car carplate</database>
+			<url>https://requestor-proxy.figure-eight.com/figure_eight_datasets/open-images/test/5df8350a0ed5ac7d.jpg</url>
+		</source>
 		<size>
 			<width>1024</width>
 			<height>768</height>
 			<depth>3</depth>
 		</size>
-		<url>https://requestor-proxy.figure-eight.com/figure_eight_datasets/open-images/test/5df8350a0ed5ac7d.jpg</url>
+		<segmented>0</segmented>
 		<object>
 			<name>carplate</name>
-			<difficult>0</difficult>
+			<pose>Unspecified</pose>
 			<occluded>0</occluded>
 			<truncated>0</truncated>
+			<difficult>0</difficult>
 			<bndbox>
 				<xmin>32</xmin>
 				<ymin>86</ymin>
@@ -20,9 +27,10 @@
 		</object>
 		<object>
 			<name>carplate</name>
-			<difficult>0</difficult>
+			<pose>Unspecified</pose>
 			<occluded>0</occluded>
 			<truncated>0</truncated>
+			<difficult>0</difficult>
 			<bndbox>
 				<xmin>182</xmin>
 				<ymin>514</ymin>
@@ -32,9 +40,10 @@
 		</object>
 		<object>
 			<name>carplate</name>
-			<difficult>0</difficult>
+			<pose>Unspecified</pose>
 			<occluded>1</occluded>
 			<truncated>0</truncated>
+			<difficult>0</difficult>
 			<bndbox>
 				<xmin>411</xmin>
 				<ymin>38</ymin>
@@ -44,9 +53,10 @@
 		</object>
 		<object>
 			<name>carplate</name>
-			<difficult>0</difficult>
+			<pose>Unspecified</pose>
 			<occluded>0</occluded>
 			<truncated>1</truncated>
+			<difficult>0</difficult>
 			<bndbox>
 				<xmin>1007</xmin>
 				<ymin>56</ymin>
@@ -56,9 +66,10 @@
 		</object>
 		<object>
 			<name>car</name>
-			<difficult>0</difficult>
+			<pose>Unspecified</pose>
 			<occluded>1</occluded>
 			<truncated>0</truncated>
+			<difficult>0</difficult>
 			<bndbox>
 				<xmin>1</xmin>
 				<ymin>2</ymin>
@@ -68,9 +79,10 @@
 		</object>
 		<object>
 			<name>car</name>
-			<difficult>0</difficult>
+			<pose>Unspecified</pose>
 			<occluded>0</occluded>
 			<truncated>0</truncated>
+			<difficult>0</difficult>
 			<bndbox>
 				<xmin>92</xmin>
 				<ymin>31</ymin>
@@ -80,9 +92,10 @@
 		</object>
 		<object>
 			<name>car</name>
-			<difficult>0</difficult>
+			<pose>Unspecified</pose>
 			<occluded>1</occluded>
 			<truncated>0</truncated>
+			<difficult>0</difficult>
 			<bndbox>
 				<xmin>402</xmin>
 				<ymin>1</ymin>
@@ -92,9 +105,10 @@
 		</object>
 		<object>
 			<name>car</name>
-			<difficult>0</difficult>
+			<pose>Unspecified</pose>
 			<occluded>1</occluded>
 			<truncated>0</truncated>
+			<difficult>0</difficult>
 			<bndbox>
 				<xmin>868</xmin>
 				<ymin>1</ymin>
@@ -104,9 +118,10 @@
 		</object>
 		<object>
 			<name>car</name>
-			<difficult>0</difficult>
+			<pose>Unspecified</pose>
 			<occluded>0</occluded>
 			<truncated>0</truncated>
+			<difficult>0</difficult>
 			<bndbox>
 				<xmin>974</xmin>
 				<ymin>4</ymin>
