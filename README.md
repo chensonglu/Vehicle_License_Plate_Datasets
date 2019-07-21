@@ -1,5 +1,4 @@
-# Simultaneous End-to-End Vehicle and License Plate Detection with Multi-Branch Attention Neural Network
-# Supplementary Materials
+# Simultaneous End-to-End Vehicle and License Plate Detection with Multi-Branch Attention Neural Network Supplementary Materials
 
 ## III. METHODOLOGY
 ### A. Base Network
