@@ -12,7 +12,7 @@ The details of the backbone network are shown in Table I without the ReLU activa
 The scale of features in different layers may be quite different, making it difficult to combine them for detection directly, as illustrated in Figure 1. After normalization, features from different layers are of the same order of magnitude.
 
 <div align="center">
-<img src="extras/scales.png" width="50%">
+<img src="extras/scales.png" width="60%">
 </div>
 
 ### C. Anchor Design Strategy
