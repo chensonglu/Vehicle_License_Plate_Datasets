@@ -32,6 +32,11 @@ Figure 4 demonstrates two feature fusion building blocks from ION[3] and FSSD[4]
 
 ![IONFSSD](extras/IONFSSD_new.png)
 
+## IV. EXPERIMENTS
+### A. Datasets
+
+![examples](extras/examples.png)
+
 ## REFERENCES
 [1]F. Yu and V. Koltun, “Multi-scale context aggregation by dilated convolutions,” in Proceedings of the 4th International Conference on Learning Representations (ICLR), Y. Bengio and Y. LeCun, Eds., San Juan, Puerto Rico, May 2016.
 
