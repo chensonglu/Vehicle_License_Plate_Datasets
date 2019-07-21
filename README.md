@@ -7,7 +7,7 @@ The details of the backbone network are shown in Table I without the ReLU activa
 ![backbone](extras/backbone.png)
 
 ### B. Detection Branch
-The scale of features in different layers may be quite different, making it difficult to combine them for detection directly, as illustrated in Figure I.
+The scale of features in different layers may be quite different, making it difficult to combine them for detection directly, as illustrated in Figure I. After normalization, features from different layers are of the same order of magnitude.
 
 ![scales](extras/scales.png)
 
