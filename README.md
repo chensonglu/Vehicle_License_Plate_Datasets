@@ -9,7 +9,7 @@ The details of the backbone network are shown in Table I without the ReLU activa
 ### B. Detection Branch
 The scale of features in different layers may be quite different, making it difficult to combine them for detection directly, as illustrated in Figure I.
 
-![distribution](extras/scales.png)
+![scales](extras/scales.png)
 
 ## REFERENCES
 [1]F. Yu and V. Koltun, “Multi-scale context aggregation by dilated convolutions,” in Proceedings of the 4th International Conference on Learning Representations (ICLR), Y. Bengio and Y. LeCun, Eds., San Juan, Puerto Rico, May 2016.
