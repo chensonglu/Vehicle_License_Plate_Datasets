@@ -18,28 +18,41 @@ The scale of features in different layers may be quite different, making it diff
 ### C. Anchor Design Strategy
 IoU(Intersection over Union) is calculated as Equation (1).
 
-![IoU](extras/IoU.png)
+<div align="center">
+<img src="extras/IoU.png" width="40%">
+</div>
 
 The average IoU and spatial IoU are demonstrated in Figure 2, where the only difference is whether to consider the ***spatial position*** of the anchors.
 
-![AvgSpt](extras/AvgSpt.png)
+<div align="center">
+<img src="extras/AvgSpt.png" width="40%">
+</div>
 
 Moreover, the anchor clustering is carried out for the vehicle detection branch and the license plate detection branch separately. Figure 3 illustrates the anchor distribution mapped back to the original image. The lighter color corresponds to the anchors of the shallower head layers and the darker color corresponds to the anchors of the deeper head layers, where the anchors of shallow layers are small, dense and the anchors of deep layers are large, sparse. For simplicity, only three levels of anchors in the vehicle detection branch are presented, where there should be six in all. As can be seen, the cluster centroids of the vehicle are tall, thin boxes and the cluster centroids of the license plate are short, wide boxes.
 
-![AnchorDistribution](extras/AnchorDistribution.png)
+<div align="center">
+<img src="extras/AnchorDistribution.png" width="40%">
+</div>
+
 Furthermore, like SSD[2], the anchor priors are placed on multiple feature maps. Let F be the number of feature maps, S<sub>i</sub> be the size of the i-th feature map, A<sub>i</sub> be the number of anchors placed on the i-th feature map, N<sub>anchor</sub> be the total number of anchors. The number of anchors is calculated as Equation (2). For SSD300, the size of six head layers are S={38, 19, 10, 5, 3, 1}, and the anchor number of six head layers are A={4, 6, 6, 6, 4, 4}. From Equation (2), the number of anchors is calculated by 8732=(38x38x4)+(19x19x6)+(10x10x6)+(5x5x6)+(3x3x4)+(1x1x4), et cetera.
 
-![AnchorNumber](extras/AnchorNumber.png)
+<div align="center">
+<img src="extras/AnchorNumber.png" width="40%">
+</div>
 
 ### D. Attention and Feature Fusion
 Figure 4 demonstrates two feature fusion building blocks from ION[3] and FSSD[4]. The only differece between ION and FPN is the fusion mode, where FPN is element-wise addition and ION is concatenation by channel. FSSD extends a series of pyramid features after the FPN fusion for detection.
 
-![IONFSSD](extras/IONFSSD_new.png)
+<div align="center">
+<img src="extras/IONFSSD_new.png" width="40%">
+</div>
 
 ## IV. EXPERIMENTS
 ### A. Datasets
 
-![examples](extras/examples.png)
+<div align="center">
+<img src="extras/examples.png" width="40%">
+</div>
 
 ***VALID*** For simplicity, we name our dataset VALID (Vehicle And LIcense plate Dataset). We employ one auto-mobile data recorder (Ra) to collect videos on the road of a Chinese city\footnote{Zhuhai, China} with the resolution of 720p\footnote{720 $\times$ 1280 (height $\times$ width), 25FPS}. The accumulative total time of videos is about four hours and they are all collected in the daytime. In order to enable data diversity, our data acquisition process was carried out in four days, one hour each day, in different places, such as the city center, suburb, expressway, residential area, etc. Furthermore, we also export ten five-minute videos from another auto-mobile data recorder (Rb), where all videos have the same resolution with videos from Ra. After key-frame extraction every 30 frames, five volunteers worked one day to filter out duplicated or almost invariable images as well as images without vehicles. Finally, 887 images are carefully annotated in one week by five volunteers, where 78 images from Rb are used as the test set and the rest 809 images from Ra are randomly divided into the training set and the validation set by 7:3. Some examples of VALID are illustrated in Figure \ref{fig:VALIDCarOID}. Each license plate must correspond to a vehicle, and a vehicle not always contains a license plate.
 
