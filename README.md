@@ -30,4 +30,5 @@ Furthermore, like SSD[2], the anchor priors are placed on multiple feature maps.
 
 ## REFERENCES
 [1]F. Yu and V. Koltun, “Multi-scale context aggregation by dilated convolutions,” in Proceedings of the 4th International Conference on Learning Representations (ICLR), Y. Bengio and Y. LeCun, Eds., San Juan, Puerto Rico, May 2016.
+
 [2]W. Liu, D. Anguelov, D. Erhan, C. Szegedy, S. E. Reed, C.-Y. Fu, and A. C. Berg, “SSD: Single shot MultiBox detector,” in Proceedings of the 14th European Conference on Computer Vision (ECCV), Part I, ser. Lecture Notes in Computer Science, B. Leibe, J. Matas, N. Sebe, and M. Welling, Eds., vol. 9905. Amsterdam, The Netherlands: Springer, Oct. 2016, pp. 21–37.
