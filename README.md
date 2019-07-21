@@ -28,6 +28,7 @@ Furthermore, like SSD[2], the anchor priors are placed on multiple feature maps.
 ![AnchorNumber](extras/AnchorNumber.png)
 
 ### D. Attention and Feature Fusion
+Figure 4 demonstrates two feature fusion building blocks from ION[3] and FSSD[4]. The only differece between ION and FPN is the fusion mode, where FPN is element-wise addition and ION is concatenation by channel. FSSD extends a series of pyramid features after the FPN fusion for detection.
 
 ![IONFSSD](extras/IONFSSD_new.png)
 
@@ -35,3 +36,7 @@ Furthermore, like SSD[2], the anchor priors are placed on multiple feature maps.
 [1]F. Yu and V. Koltun, “Multi-scale context aggregation by dilated convolutions,” in Proceedings of the 4th International Conference on Learning Representations (ICLR), Y. Bengio and Y. LeCun, Eds., San Juan, Puerto Rico, May 2016.
 
 [2]W. Liu, D. Anguelov, D. Erhan, C. Szegedy, S. E. Reed, C.-Y. Fu, and A. C. Berg, “SSD: Single shot MultiBox detector,” in Proceedings of the 14th European Conference on Computer Vision (ECCV), Part I, ser. Lecture Notes in Computer Science, B. Leibe, J. Matas, N. Sebe, and M. Welling, Eds., vol. 9905. Amsterdam, The Netherlands: Springer, Oct. 2016, pp. 21–37.
+
+[3]S. Bell, C. L. Zitnick, K. Bala, and R. Girshick, “Inside-Outside Net: Detecting Objects in Context with Skip Pooling and Recurrent Neural Networks,” in IEEE Conference on Computer Vision and Pattern Recognition (CVPR). Las Vegas, NV, USA: IEEE, Jun. 2016, pp. 2874–2883.
+
+[4]Z. Li and F. Zhou, “FSSD: Feature Fusion Single Shot Multibox Detector,” arXiv preprint arXiv:1712.00960, 2017.
