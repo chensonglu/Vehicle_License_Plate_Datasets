@@ -7,11 +7,14 @@ The details of the backbone network are shown in Table I without the ReLU activa
 ![backbone](extras/backbone.png)
 
 ### B. Detection Branch
-The scale of features in different layers may be quite different, making it difficult to combine them for detection directly, as illustrated in Figure I. After normalization, features from different layers are of the same order of magnitude.
+The scale of features in different layers may be quite different, making it difficult to combine them for detection directly, as illustrated in Figure 1. After normalization, features from different layers are of the same order of magnitude.
 
 ![scales](extras/scales.png)
 
 ### C. Anchor Design Strategy
+The average IoU and spatial IoU are demonstrated in Figure 2, where 
+
+
 
 It illustrates the anchor distribution mapped back to the original image. The lighter color corresponds to the anchors of the shallower head layers and the darker color corresponds to the anchors of the deeper head layers, where the anchors of shallow layers are small, dense and the anchors of deep layers are large, sparse. For simplicity, only three levels of anchors in the vehicle detection branch are presented, where there should be six in all. As can be seen, the cluster centroids of the vehicle are tall, thin boxes and the cluster centroids of the license plate are short, wide boxes.
 
