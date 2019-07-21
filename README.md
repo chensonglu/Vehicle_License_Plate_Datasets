@@ -27,6 +27,9 @@ Furthermore, like SSD[2], the anchor priors are placed on multiple feature maps.
 
 ![AnchorNumber](extras/AnchorNumber.png)
 
+### D. Attention and Feature Fusion
+
+
 ## REFERENCES
 [1]F. Yu and V. Koltun, “Multi-scale context aggregation by dilated convolutions,” in Proceedings of the 4th International Conference on Learning Representations (ICLR), Y. Bengio and Y. LeCun, Eds., San Juan, Puerto Rico, May 2016.
 
