@@ -18,7 +18,7 @@ The scale of features in different layers may be quite different, making it diff
 To get the feature scales, we simply run the network for 1 iteration and get the first 100 activations of each layer, where all activations are averaged by channel. According to [11], the shallow features of the head layers need normalization when combined with the deep features of the head layers, which avoids that the larger parameters "dominate" the smaller ones. We apply L2-norm to each channel x<sub>i</sub>, and then get the normalized y<sub>i</sub> by multiplying x<sub>i</sub> with a scaling factor s<sub>i</sub>, where ||x||<sub>2</sub> means the L2-norm of a d-dimensional input x=(x<sub>1</sub>,x<sub>2</sub>,...,x<sub>d</sub>).
 
 <div align="center">
-<img src="extras/normalization.png" width="50%">
+<img src="extras/normalization.png" width="40%">
 </div>
 
 ### C. Anchor Design Strategy
