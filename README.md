@@ -78,7 +78,9 @@ To sum up, the statistics of the two datasets are illustrated in Table III. Ther
 
 ### B. Observed Problem
 
+Furthermore, Figure 5 demonstrates the detection results on the validation set of VALID with SSD300 when training with only one head layer. The dashed line means training vehicle and license plate separately, and the solid line means training vehicle and license plate together. From the graph, we can see that the AP of the license plate drops a lot when training vehicle and license plate together, reaching 40.98% at most, and the detection performance of the vehicle is almost unaffected.
 
+Moreover, various combinations of the head layers based on SSD300 further verify the detection problem. For simplicity, we denote the head layer conv4_3 as H<sub>0</sub>, conv3_3 as H<sub>-1</sub>, conv2_2 as H<sub>-2</sub>, and conv5_3 to conv9_2 as H<sub>1</sub> ~ H<sub>6</sub>. Figure 6illustrates the detection results on the validation set of VALID with multiple combinations of the head layers. When training together, the AP of the vehicle is not affected, however, the performance of the license plate drops a lot.
 
 ## REFERENCES
 [1]F. Yu and V. Koltun, “Multi-scale context aggregation by dilated convolutions,” in Proceedings of the 4th International Conference on Learning Representations (ICLR), Y. Bengio and Y. LeCun, Eds., San Juan, Puerto Rico, May 2016.
