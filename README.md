@@ -41,7 +41,7 @@ Furthermore, like SSD[2], the anchor priors are placed on multiple feature maps.
 </div>
 
 ### D. Attention and Feature Fusion
-Figure 4 demonstrates two feature fusion building blocks from ION[3] and FSSD[4]. The only differece between ION and FPN is the fusion mode, where FPN is element-wise addition and ION is concatenation by channel. FSSD extends a series of pyramid features after the FPN fusion for detection.
+Figure 4 demonstrates two feature fusion building blocks from ION[3] and FSSD[4]. The only differece between ION and FPN[9] is the fusion mode, where FPN is element-wise addition and ION is concatenation by channel. FSSD extends a series of pyramid features after the FPN fusion for detection.
 
 <div align="center">
 <img src="extras/IONFSSD_new.png" width="100%">
@@ -63,7 +63,7 @@ Figure 4 demonstrates two feature fusion building blocks from ION[3] and FSSD[4]
 To sum up, the statistics of the three datasets are illustrated in Table II. There are about 5.2 vehicles and 2.3 license plates per image in VALID, and about 2.05 vehicles and 1.39 license plates per image in DETROIT.
 
 <div align="center">
-<img src="extras/statistics.png" width="40%">
+<img src="extras/statistics.png" width="50%">
 </div>
 
 ***Udacity Dataset 1*** Udacity self-driving dataset 1 includes driving in Mountain View California and neighboring cities during daylight conditions. It contains over 65000 labels across 9420 frames collected from a camera, which has a resolution of 1200 x 1920 (height x width). The dataset was annotated by a combination of machine learning algorithms and humans. In this paper, all labels of "Car" and "Truck" in Udacity Dataset 1 are transformed to "Vehicle", and all images are randomly divided into the training-validation set and test set by 7:3.
@@ -73,7 +73,7 @@ To sum up, the statistics of the three datasets are illustrated in Table II. The
 To sum up, the statistics of the two datasets are illustrated in Table III. There are about 7.05 vehicles per image in Udacity Dataset 1.
 
 <div align="center">
-<img src="extras/statisticsOR.png" width="40%">
+<img src="extras/statisticsOR.png" width="50%">
 </div>
 
 ## REFERENCES
@@ -92,3 +92,5 @@ To sum up, the statistics of the two datasets are illustrated in Table III. Ther
 [7]S. M. Silva and C. R. Jung, “License plate detection and recognition in unconstrained scenarios,” in Proceedings of the 15th European Conference on Computer Vision (ECCV), Part XII, ser. Lecture Notes in Computer Science, V. Ferrari, M. Hebert, C. Sminchisescu, and Y. Weiss, Eds., vol. 11216. Munich, Germany: Springer, Sep. 2018, pp. 593–609.
 
 [8]G.-S. Hsu, J.-C. Chen, and Y.-Z. Chung, “Application-oriented license plate recognition,” IEEE Transactions on Vehicular Technology, vol. 62, no. 2, pp. 552–561, Feb. 2013.
+
+[9]T.-Y. Lin, P. Doll´ar, R. Girshick, K. He, B. Hariharan, and S. Belongie, “Feature pyramid networks for object detection,” in IEEE Conference on Computer Vision and Pattern Recognition (CVPR). Honolulu, HI, USA: IEEE, Jul. 2017, pp. 936–944.
