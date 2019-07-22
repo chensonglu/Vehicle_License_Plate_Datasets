@@ -106,6 +106,12 @@ From Table IV, we can see the performance of the vehicle improves a lot for SSD 
 
 As seen in Figure 6, when training vehicle and license plate in two independent networks, both the vehicle and the license plate achieve the best single-layer performance with conv4_3. Perhaps it is because shallower features have high resolution but weak semantics, and deeper features have strong semantics but low resolution. In addition, it has a close performance for the vehicle and the license plate with conv5_3 and fc7. However, the performance of the license plate drops rapidly using head layers deeper than fc7, because deep layers have large down-sampling rates which are not favorable to small-scale objects. Moreover, as seen in Figure 7, different combinations of head layers deeper than conv4_3 have a steady performance for both the vehicle and the license plate. However, after adding conv3_3 or conv2_2, the performance drops a lot for both the vehicle and the license plate because these head layers bring in too many false positives due to the low semantics and the overwhelming number of anchor boxes. For comparison with SSD, we choose H<sub>0</sub> with H<sub>0</sub> as the head layers of the license plate detection branch, and select H<sub>0</sub> with H<sub>2</sub> ~ H<sub>6</sub> as the head layers of the vehicle detection branch
 
+### D. Experiments with Anchor Design Strategy
+
+With our anchor design strategy, the anchor priors are more close to the ground truths to generate better detection, as demonstrated in Figure 9. It demonstrates two cropped image blocks from the test set of VALID, where a small vehicle and license plate are failed to be detected by SSD because of inappropriate anchor boxes. These two false negatives are correctly detected with our strategy. Furthermore, due to better matching with the ground truths, our strategy makes the network converge faster, as illustrated in Figure 10.
+
+
+
 ## REFERENCES
 [1]F. Yu and V. Koltun, “Multi-scale context aggregation by dilated convolutions,” in Proceedings of the 4th International Conference on Learning Representations (ICLR), Y. Bengio and Y. LeCun, Eds., San Juan, Puerto Rico, May 2016.
 
