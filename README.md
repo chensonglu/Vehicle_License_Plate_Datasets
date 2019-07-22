@@ -62,11 +62,19 @@ Figure 4 demonstrates two feature fusion building blocks from ION[3] and FSSD[4]
 
 To sum up, the statistics of the three datasets are illustrated in Table II. There are about 5.2 vehicles and 2.3 license plates per image in VALID, and about 2.05 vehicles and 1.39 license plates per image in DETROIT.
 
+<div align="center">
+<img src="extras/statistics.png" width="40%">
+</div>
+
 ***Udacity Dataset 1*** Udacity self-driving dataset 1 includes driving in Mountain View California and neighboring cities during daylight conditions. It contains over 65000 labels across 9420 frames collected from a camera, which has a resolution of 1200 x 1920 (height x width). The dataset was annotated by a combination of machine learning algorithms and humans. In this paper, all labels of "Car" and "Truck" in Udacity Dataset 1 are transformed to "Vehicle", and all images are randomly divided into the training-validation set and test set by 7:3.
 
 ***AOLP-LE*** AOLP[8] provides three categories of license plates for different applications, which are access control (AC), law enforcement (LE), and road patrol (RP). We only experiment on the AOLP-LE, because it is an on-road scenario. 582 images of AOLP-LE are collected at daytime with the resolution of 480 x 640 (height x width), and 175 images are collected at nighttime with the resolution of 240 x 320 (height x width). Almost all images have only one license plate and only a few images have two license plates. All images are randomly divided into training-validation and test set by 7:3.
 
 To sum up, the statistics of the two datasets are illustrated in Table III. There are about 7.05 vehicles per image in Udacity Dataset 1.
+
+<div align="center">
+<img src="extras/statisticsOR.png" width="40%">
+</div>
 
 ## REFERENCES
 [1]F. Yu and V. Koltun, “Multi-scale context aggregation by dilated convolutions,” in Proceedings of the 4th International Conference on Learning Representations (ICLR), Y. Bengio and Y. LeCun, Eds., San Juan, Puerto Rico, May 2016.
