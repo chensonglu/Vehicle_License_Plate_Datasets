@@ -41,7 +41,7 @@ Furthermore, like SSD[2], the anchor priors are placed on multiple feature maps.
 </div>
 
 ### D. Attention and Feature Fusion
-Figure 4 demonstrates two feature fusion building blocks from ION[3] and FSSD[4]. The only differece between ION and FPN[9] is the fusion mode, where FPN is element-wise addition and ION is concatenation by channel. FSSD extends a series of pyramid features after the FPN fusion for detection.
+Figure 4 demonstrates two feature fusion building blocks from ION[3] and FSSD[4]. The only differece between ION and FPN[9] is the fusion mode, where FPN is element-wise addition and ION is concatenation by channel. FSSD extends a series of pyramid features after the ION fusion for object detection.
 
 <div align="center">
 <img src="extras/IONFSSD_new_v2.png" width="100%">
