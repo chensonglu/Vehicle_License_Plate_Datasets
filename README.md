@@ -49,6 +49,8 @@ Figure 4 demonstrates two feature fusion building blocks from ION[3] and FSSD[4]
 
 ## IV. EXPERIMENTS
 ### A. Datasets
+DETROIT and DOC are now available at: https://github.com/chensonglu/Vehicle_License_Plate_Datasets.
+
 <div align="center">
 <img src="extras/examples.png" width="100%">
 </div>
