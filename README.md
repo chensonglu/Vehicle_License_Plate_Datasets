@@ -81,13 +81,13 @@ To sum up, the statistics of the two datasets are illustrated in Table III. Ther
 Furthermore, Figure 5 demonstrates the detection results on the validation set of VALID with SSD300 when training with only one head layer. The dashed line means training vehicle and license plate separately, and the solid line means training vehicle and license plate together. From the graph, we can see that the AP of the license plate drops a lot when training vehicle and license plate together, reaching 40.98% at most, and the detection performance of the vehicle is almost unaffected.
 
 <div align="center">
-<img src="extras/onelayer.png" width="40%">
+<img src="extras/onelayer.png" width="50%">
 </div>
 
 Moreover, various combinations of the head layers based on SSD300 further verify the detection problem. For simplicity, we denote the head layer conv4_3 as H<sub>0</sub>, conv3_3 as H<sub>-1</sub>, conv2_2 as H<sub>-2</sub>, and conv5_3 to conv9_2 as H<sub>1</sub> ~ H<sub>6</sub>. Figure 6 illustrates the detection results on the validation set of VALID with multiple combinations of the head layers. When training together, the AP of the vehicle is not affected, however, the performance of the license plate drops a lot.
 
 <div align="center">
-<img src="extras/multilayer.png" width="40%">
+<img src="extras/multilayer.png" width="50%">
 </div>
 
 ## REFERENCES
