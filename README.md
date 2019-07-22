@@ -110,7 +110,13 @@ As seen in Figure 6, when training vehicle and license plate in two independent 
 
 With our anchor design strategy, the anchor priors are more close to the ground truths to generate better detection, as demonstrated in Figure 9. It demonstrates two cropped image blocks from the test set of VALID, where a small vehicle and license plate are failed to be detected by SSD because of inappropriate anchor boxes. These two false negatives are correctly detected with our strategy. Furthermore, due to better matching with the ground truths, our strategy makes the network converge faster, as illustrated in Figure 10.
 
+<div align="center">
+<img src="extras/realAnchor.png" width="50%">
+</div>
 
+<div align="center">
+<img src="extras/locloss.png" width="50%">
+</div>
 
 ## REFERENCES
 [1]F. Yu and V. Koltun, “Multi-scale context aggregation by dilated convolutions,” in Proceedings of the 4th International Conference on Learning Representations (ICLR), Y. Bengio and Y. LeCun, Eds., San Juan, Puerto Rico, May 2016.
