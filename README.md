@@ -15,6 +15,12 @@ The scale of features in different layers may be quite different, making it diff
 <img src="extras/scales.png" width="70%">
 </div>
 
+To get the feature scales, we simply run the network for 1 iteration and get the first 100 activations of each layer, where all activations are averaged by channel. According to [11], the shallow features of the head layers need normalization when combined with the deep features of the head layers, which avoids that the larger parameters "dominate" the smaller ones. We apply L2-norm to each channel x<sub>i</sub>, and then get the normalized y<sub>i</sub> by multiplying x<sub>i</sub> with a scaling factor s<sub>i</sub>, where ||x||<sub>2</sub> means the L2-norm of a d-dimensional input x=(x<sub>1</sub>,x<sub>2</sub>,...,x<sub>d</sub>).
+
+<div align="center">
+<img src="extras/normalization.png" width="50%">
+</div>
+
 ### C. Anchor Design Strategy
 IoU(Intersection over Union) is calculated as Equation (1).
 
@@ -145,3 +151,5 @@ Figure 11 demonstrates the detection performance after adding attention to multi
 [9]T.-Y. Lin, P. Doll´ar, R. Girshick, K. He, B. Hariharan, and S. Belongie, “Feature pyramid networks for object detection,” in IEEE Conference on Computer Vision and Pattern Recognition (CVPR). Honolulu, HI, USA: IEEE, Jul. 2017, pp. 936–944.
 
 [10]O. Russakovsky, J. Deng, H. Su, J. Krause, S. Satheesh, S. Ma, Z. Huang, A. Karpathy, A. Khosla, M. Bernstein, A. C. Berg, and L. Fei-Fei, “ImageNet Large Scale Visual Recognition Challenge,” International Journal of Computer Vision, vol. 115, no. 3, pp. 211–252, Dec. 2015.
+
+[11]W. Liu, A. Rabinovich, and A. C. Berg, “ParseNet: Looking wider to see better,” arXiv preprint arXiv:1506.04579, 2015.
