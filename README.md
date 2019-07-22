@@ -40,7 +40,7 @@ Moreover, the anchor clustering is carried out for the vehicle detection branch 
 <img src="extras/AnchorDistribution.png" width="50%">
 </div>
 
-Furthermore, like SSD[2], the anchor priors are placed on multiple feature maps. Let F be the number of feature maps, S<sub>i</sub> be the size of the i-th feature map, A<sub>i</sub> be the number of anchors placed on the i-th feature map, N<sub>anchor</sub> be the total number of anchors. The number of anchors is calculated as Equation (5). For SSD300, the size of six head layers are S={38, 19, 10, 5, 3, 1}, and the anchor number of six head layers are A={4, 6, 6, 6, 4, 4}. From Equation (2), the anchor number of SSD300 is calculated by 8732 = (38x38x4) + (19x19x6) + (10x10x6) + (5x5x6) + (3x3x4) + (1x1x4), et cetera.
+Furthermore, like SSD[2], the anchor priors are placed on multiple feature maps. Let F be the number of feature maps, S<sub>i</sub> be the size of the i-th feature map, A<sub>i</sub> be the number of anchors placed on the i-th feature map, N<sub>anchor</sub> be the total number of anchors. The number of anchors is calculated as Equation (5). For SSD300, the size of six head layers are S={38, 19, 10, 5, 3, 1}, and the anchor number of six head layers are A={4, 6, 6, 6, 4, 4}. From Equation (5), the anchor number of SSD300 is calculated by 8732 = (38x38x4) + (19x19x6) + (10x10x6) + (5x5x6) + (3x3x4) + (1x1x4), et cetera.
 
 <div align="center">
 <img src="extras/AnchorNumber_new.png" width="40%">
