@@ -99,7 +99,7 @@ In addition, as shown in Figure 8, we manually remove the background by filling 
 From Table IV, we can see the performance of the vehicle improves a lot for SSD after removing the background. The performance of the license plate is also enhanced after separating from the vehicle because it gets rid of the effects of both the vehicle and the background. However, with SSD, the license plates in the vehicles are still affected by the vehicles.
 
 <div align="center">
-<img src="extras/withoutbackground.png" width="50%">
+<img src="extras/withoutbackground_new.png" width="50%">
 </div>
 
 ## REFERENCES
