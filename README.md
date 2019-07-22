@@ -93,7 +93,7 @@ Moreover, various combinations of the head layers based on SSD300 further verify
 In addition, as shown in Figure 8, we manually remove the background by filling it with the mean of ImageNet[10]. The license plates in the vehicles are either unchanged or randomly distributed to other places as before. In this way, the effects of the background are removed and the effects of the vehicle to the license plate can be tested without interference.
 
 <div align="center">
-<img src="extras/ManualAttention.png" width="50%">
+<img src="extras/ManulAttention.png" width="50%">
 </div>
 
 ## REFERENCES
