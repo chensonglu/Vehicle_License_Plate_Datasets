@@ -137,6 +137,12 @@ Figure 11 demonstrates the detection performance after adding attention to multi
 <img src="extras/AttentionNum.png" width="50%">
 </div>
 
+The performance gains from different feature fusion strategies are demonstrated in Table V. It can be seen that all three strategies are both useful for detection, and FSSD[4] has the best performance. With feature concatenation[3] and addition[9], it has almost the same performance. However, the feature fusion strategies ION[3] and FSSD[4] bring in more computational complexity. For the speed-accuracy tradeoff, we select FPN[9] as the feature-fusion module.
+
+<div align="center">
+<img src="extras/Fusion.png" width="50%">
+</div>
+
 ## REFERENCES
 [1]F. Yu and V. Koltun, “Multi-scale context aggregation by dilated convolutions,” in Proceedings of the 4th International Conference on Learning Representations (ICLR), Y. Bengio and Y. LeCun, Eds., San Juan, Puerto Rico, May 2016.
 
