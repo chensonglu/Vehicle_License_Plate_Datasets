@@ -28,14 +28,16 @@ IoU(Intersection over Union) is calculated as Equation (4).
 <img src="extras/IoU_new.png" width="50%">
 </div>
 
-The average IoU and spatial IoU are demonstrated in Figure 2, where the only difference is whether to consider the ***spatial position*** of the anchors. Let N<sub>GT</sub> be the number of ground truths, NA be all anchors. The average IoU and spatial IoU are calculated as Equation (5), where the only difference is whether to consider the ***spatial position*** of the anchors.
+The average IoU and spatial IoU are demonstrated in Figure 2, where the only difference is whether to consider the ***spatial position*** of the anchors.
 
 <div align="center">
 <img src="extras/AvgSpt.png" width="50%">
 </div>
 
+Let N<sub>GT</sub> be the number of ground truths, NA be all anchors. The average IoU and spatial IoU are calculated as Equation (5), where the only difference is whether to consider the ***spatial position*** of the anchors.
+
 <div align="center">
-<img src="extras/AvgSptIoU.png" width="40%">
+<img src="extras/AvgSptIoU.png" width="50%">
 </div>
 
 Moreover, the anchor clustering is carried out for the vehicle detection branch and the license plate detection branch separately. Figure 3 illustrates the anchor distribution mapped back to the original image. The lighter color corresponds to the anchors of the shallower head layers and the darker color corresponds to the anchors of the deeper head layers, where the anchors of shallow layers are small, dense and the anchors of deep layers are large, sparse. For simplicity, only three levels of anchors in the vehicle detection branch are presented, where there should be six in all. As can be seen, the cluster centroids of the vehicle are tall, thin boxes and the cluster centroids of the license plate are short, wide boxes.
