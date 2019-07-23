@@ -28,10 +28,14 @@ IoU(Intersection over Union) is calculated as Equation (4).
 <img src="extras/IoU_new.png" width="50%">
 </div>
 
-The average IoU and spatial IoU are demonstrated in Figure 2, where the only difference is whether to consider the ***spatial position*** of the anchors.
+The average IoU and spatial IoU are demonstrated in Figure 2, where the only difference is whether to consider the ***spatial position*** of the anchors. Let N<sub>GT</sub> be the number of ground truths, NA be all anchors. The average IoU and spatial IoU are calculated as Equation (5), where the only difference is whether to consider the ***spatial position*** of the anchors.
 
 <div align="center">
 <img src="extras/AvgSpt.png" width="50%">
+</div>
+
+<div align="center">
+<img src="extras/AvgSptIoU.png" width="40%">
 </div>
 
 Moreover, the anchor clustering is carried out for the vehicle detection branch and the license plate detection branch separately. Figure 3 illustrates the anchor distribution mapped back to the original image. The lighter color corresponds to the anchors of the shallower head layers and the darker color corresponds to the anchors of the deeper head layers, where the anchors of shallow layers are small, dense and the anchors of deep layers are large, sparse. For simplicity, only three levels of anchors in the vehicle detection branch are presented, where there should be six in all. As can be seen, the cluster centroids of the vehicle are tall, thin boxes and the cluster centroids of the license plate are short, wide boxes.
@@ -40,10 +44,10 @@ Moreover, the anchor clustering is carried out for the vehicle detection branch 
 <img src="extras/AnchorDistribution.png" width="50%">
 </div>
 
-Furthermore, like SSD[2], the anchor priors are placed on multiple feature maps. Let F be the number of feature maps, S<sub>i</sub> be the size of the i-th feature map, A<sub>i</sub> be the number of anchors placed on the i-th feature map, N<sub>anchor</sub> be the total number of anchors. The number of anchors is calculated as Equation (5). For SSD300, the size of six head layers are S={38, 19, 10, 5, 3, 1}, and the anchor number of six head layers are A={4, 6, 6, 6, 4, 4}. From Equation (5), the anchor number of SSD300 is calculated by 8732 = (38x38x4) + (19x19x6) + (10x10x6) + (5x5x6) + (3x3x4) + (1x1x4), et cetera.
+Furthermore, like SSD[2], the anchor priors are placed on multiple feature maps. Let F be the number of feature maps, S<sub>i</sub> be the size of the i-th feature map, A<sub>i</sub> be the number of anchors placed on the i-th feature map, N<sub>anchor</sub> be the total number of anchors. The number of anchors is calculated as Equation (6). For SSD300, the size of six head layers are S={38, 19, 10, 5, 3, 1}, and the anchor number of six head layers are A={4, 6, 6, 6, 4, 4}. From Equation (6), the anchor number of SSD300 is calculated by 8732 = (38x38x4) + (19x19x6) + (10x10x6) + (5x5x6) + (3x3x4) + (1x1x4), et cetera.
 
 <div align="center">
-<img src="extras/AnchorNumber_new.png" width="40%">
+<img src="extras/AnchorNumber_new_v2.png" width="40%">
 </div>
 
 ### D. Attention and Feature Fusion
